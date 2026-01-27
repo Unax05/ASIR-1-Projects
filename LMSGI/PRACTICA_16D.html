@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+	<head>
+		<title>PRACTICA_16D</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"  />
+	</head>
+	
+	<body>
+		<form method="get" action="respuesta.html">
+		<h1>Formulario de Registro en Campeonato</h1>
+			<table width="100%" border="0">
+				<tr valign="top">
+					<td style="width:33%;">
+						<fieldset>
+							<legend>Seleccion de Carrera</legend>
+								<select name="Longitud" id="Long" tabindex="1">
+									<option value="" selected disabled>--Selecciona una Carrera--</option>
+									<optgroup label="--Selecciona una Carrera--">
+										<option value="3">3Km</option>
+										<option value="5">5km</option>
+										<option value="10">10km</option>
+										<option value="Mrt">Maratón</option>
+									</optgroup>
+								</select>
+						</fieldset>
+					</td>
+					<td style="width:33%;">
+						<fieldset>
+							<legend>Clase de carrera</legend>
+								<select name="Clase" id="Cls" tabindex="2">
+									<option value="" selected disabled>--Clase de Carrera--</option>
+									<optgroup label="--Clase de Carrera--">
+										<option value="21+">Abierto (21+)</option>
+										<option value="30+">Maestro (30+)</option>
+										<option value="40+">Veteranos (40+)</option>
+										<option value="16-20">Jóvenes (16-20)</option>
+										<option value="12-15">Novatos (12-15)</option>
+									</optgroup>
+								</select>
+						</fieldset>
+					</td>
+					<td style="width:33%;">
+						<fieldset>
+							<legend>Competicion</legend>
+								<label><input type="radio" name="competicion" value="Fondo" tabindex="3" checked> Fondo</label><br />
+								<label><input type="radio" name="competicion" value="Marcha" tabindex="4"> Marcha</label><br />
+								<label><input type="radio" name="competicion" value="Silla_De_Ruedas" tabindex="5"> Silla de ruedas</label>
+						</fieldset>
+					</td style="width:33%;">
+				</tr>
+				<tr valign="top">
+					<td style="width:33%;">
+						<fieldset>
+							<legend>Medio de Transporte</legend>
+								<label><input type="checkbox" name="MetodoTransporte" value="Avion" tabindex="6"> Avión</label><br />
+								<label><input type="checkbox" name="MetodoTransporte" value="Barco" tabindex="7"> Barco</label><br />
+								<label><input type="checkbox" name="MetodoTransporte" value="Tren" tabindex="8"> Tren</label><br />
+								<label><input type="checkbox" name="MetodoTransporte" value="Autobús" tabindex="9"> Autobús</label><br />
+								<label><input type="checkbox" name="MetodoTransporte" value="Vehículo_propio" tabindex="10"> Vehículo propio</label>
+						</fieldset>
+					</td>
+					<td style="width:33%;">
+						<fieldset>
+							<legend>Metodo de pago</legend>
+								<label><input type="radio" name="MetodoPago" value="Efectivo" tabindex="11" checked> Efectivo</label><br />
+								<label><input type="radio" name="MetodoPago" value="Giro_Postal" tabindex="12"> Giro Postal</label><br />
+								<label><input type="radio" name="MetodoPago" value="Cheque" tabindex="13"> Cheque</label><br />
+								<label><input type="radio" name="MetodoPago" value="Tarjeta_de_crédito" tabindex="14"> Tarjeta de crédito</label><br />
+						</fieldset>
+					</td>
+					<td style="width:33%;">
+						<fieldset>
+							<legend>Tipo de tarjeta</legend>
+								<label><input type="radio" name="TipoTarjeta" value="VISA" tabindex="15"> VISA</label><br />
+								<label><input type="radio" name="TipoTarjeta" value="American_Express" tabindex="16"> American Express</label><br />
+								<label><input type="radio" name="TipoTarjeta" value="4B" tabindex="17"> 4B</label><br />
+								<label><input type="radio" name="TipoTarjeta" value="Servired" tabindex="18"> Servired</label><br />
+								<label><input type="radio" name="TipoTarjeta" value="Red_6000" tabindex="19"> Red 6000</label>
+								
+						</fieldset>
+					</td>
+				</tr>
+			</table>
+			<hr />
+			<table width="100%" border="0">
+				<tr valign="top" align="center">
+					<td>
+						<p><input type="submit" value="Enviar" />
+						   <input type="reset" value="Limpiar Selección" /></p>
+					</td>
+				</tr>
+			</table>
+		</form>
+
+	
+
+
+
+
+	</body>
+</html>
+
+

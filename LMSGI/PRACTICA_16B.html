@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+	<head>
+		<title>PRACTICA_14B </title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"  />
+	</head>
+	
+	<body>
+		<form method="post" action="mailto:argeme.vila@zabalburu.org" enctype="text/plain">
+		<h2>Formulario de Registro</h2>
+		<table width="100%" border="0" cellspacing="5">
+				<tr>
+					<td style="width:50%"><p>Nombre:
+					<input type="text" name="nombre" id="nombre" maxlength="25" tabindex="1" />
+					</p>
+					<p>Primer Apellido:
+					<input type="text" name="apellido_1" id="ape1" maxlength="25" tabindex="2" />
+					</p>
+					<p>Segudo Apellido:
+					<input type="text" name="apellido_2" id="ape2" maxlength="25" tabindex="3" />
+					</p>
+					<p>Dirección:
+					<input type="text" name="dirección" id="dir" maxlength="25" tabindex="4" />
+					</p>
+					<p>CP:
+					<input type="text" name="CP" id="CP" size="3" maxlength="5" tabindex="5" />
+					</p>
+					 <p>Estudios:
+						<select name="estudios" id="estudios" tabindex="6">
+							<option value="" selected disabled>Selecciona tus estudios en esta lista</option>
+							<optgroup label="Informática y Comunicaciones">
+								<option value="ASIR">Administración de Sistemas Informáticos en Red</option>
+								<option value="DAW">Desarrollo de Aplicaciones Web</option>
+								<option value="DAM">Desarrollo de Aplicaciones Multiplataforma</option>
+							</optgroup>
+							<optgroup label="Comercio y Marketing">
+								<option value="COM">Gestión Comercial y Marketing</option>
+								<option value="VTA">Actividades Comerciales</option>
+							</optgroup>
+							<optgroup label="Administración y Gestión">
+								<option value="ADM">Administración y Finanzas</option>
+								<option value="ASG">Asistencia a la Dirección</option>
+							</optgroup>
+							<optgroup label="Sanidad">
+								<option value="ENF">Enfermería</option>
+								<option value="FAR">Farmacia y Parafarmacia</option>
+							</optgroup>
+						</select>
+					</p>
+					<p>Comentario: <br />
+					<textarea name="comentario" id="comentario" rows="10" cols="40" tabindex="7"></textarea>
+					</p>
+					</td>
+					<td style="width:50%">
+						<p>Sexo:<br>
+							<input type="radio" name="grupo1" value="opcion1" tabindex="8"> Hombre<br />
+							<input type="radio" name="grupo1" value="opcion2" tabindex="9"> Mujer
+						</p>
+						<p>Turno:<br>
+							<input type="radio" name="grupo1" value="opcion1" tabindex="10"> Mañana<br />
+							<input type="radio" name="grupo1" value="opcion2" tabindex="11"> Tarde
+						</p>
+						<br />
+						<br />
+						<br />
+						<br />
+						<p>Idiomas:<br>
+							<input type="checkbox" name="grupo1" value="opcion1" tabindex="12"> Euskera<br />
+							<input type="checkbox" name="grupo1" value="opcion2" tabindex="13"> Inglés<br />
+							<input type="checkbox" name="grupo1" value="opcion2" tabindex="14"> Alemán
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" valign="middle" colspan="2">
+						<input type="reset" value="Limpiar" tabindex="15" />
+						<input type="submit" value="Enviar Datos" tabindex="16" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
+
+

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+	<head>
+		<title>Práctica 16C</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"  />
+	</head>
+	<body>
+	<h1> Formulario de Registro de Datos </h1>
+	<form method="post" action="mailto:argeme.vila@zabalburu.org" enctype="text/plain">
+	
+		<table width="100%" cellpadding="5">
+			<tr align="center">
+				<td colspan="2"> 
+					<hr/> 
+					<b> Información de registro </b> 
+					<hr/>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:50%" align="right"> 
+					<p> Email: <br/>
+					Contraseña: <br/>
+					Confirma Contraseña: </p> </td>
+				<td style="width:50%" align="left">
+					<input type="text" name="Email" maxlength="35" size="35" tabindex="1" id="Email"> <br/>
+					
+					<input type="password" name="Contraseña" maxlength="15" size="15" tabindex="2" id="Contraseña" /> <br/>
+				
+					<input type="password" name="CContraseña" maxlength="15" size="15" tabindex="3" id="CContraseña" /> </p>
+				</td>
+			</tr>
+			<tr align="center">
+				<td colspan="2"> 
+					<hr/>
+					<b> Información Personal </b>
+					<hr/>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:50%" align="right">
+					<p> Nombre: <br/>
+					Apellidos: <br/>
+					Dirección: <br/>
+					País: <br/>
+					Teléfono: </p>
+				</td>
+				<td style="width:50%" align="left">
+					<p> <input type="text" name="Nombre" tabindex="4" maxlength="35" size="35" id="Nombre" /> <br/>
+					
+					<input type="text" name="Apellidos" tabindex="5" maxlength="50" size="50" id="Apellidos" /> <br/>
+					
+					<input type="text" name="Direccion" tabindex="6" maxlength="35" size="35" id="Direccion" /> <br/>
+					
+					<input type="text" name="Pais" tabindex="7" maxlength="2" size="2" id="Pais" /> C.P.: <input type="text" name="CP" tabindex="8" maxlength="5" size="5" id="CP" /> <br/>
+					
+					<input type="text" name="Telefono" tabindex="9" maxlength="9" size="9" id="Telefono" /> </p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<hr/>
+					<b> Tarjeta de crédito </b>
+					<hr/>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:50%" align="right" valign="center">
+					<p> Tipo de tarjeta: </p>
+				</td>
+				<td style="width:50%" align="left" valign="center">
+					<p> <input type="radio" name="Mastercard" tabindex="10" id="Mastercard" /> Mastercard <br/>
+					
+					<input type="radio" name="Visa" tabindex="11" id="Visa" /> Visa </p>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:50%" align="right">
+					<p> Nº Tarjeta: <br/>
+					Fecha de Caducidad: </p>
+				</td>
+				<td style="width:50%" align="left">
+					<p> <input type="text" name="Tarjeta" tabindex="12" maxlength="20" size="20" id="Tarjeta" /> <br/>
+
+				Mes: <select tabindex="13" name="Mes" value="MM" />
+						<option> MM </option>
+						<option value="Enero"> Enero </option>
+						<option value="Febrero"> Febrero </option>
+						<option value="Marzo"> Marzo </option>
+						<option value="Abril"> Abril </option>
+						<option value="Mayo"> Mayo </option>
+						<option value="Junio"> Junio </option>
+						<option value="Julio"> Julio </option>
+						<option value="Agosto"> Agosto </option>
+						<option value="Septiembre"> Septiembre </option>
+						<option value="Octubre"> Octubre </option>
+						<option value="Noviembre"> Noviembre </option>
+						<option value="Diciembre"> Diciembre </option>
+					</select> Año: <select tabindex="14" name="Año" value="AAAA" />
+						<option> AAAA </option>
+						<option value="2012"> 2012 </option>
+						<option value="2013"> 2013 </option>
+						<option value="2014"> 2014 </option>
+						<option value="2015"> 2015 </option>
+						<option value="2016"> 2016 </option>
+						<option value="2017"> 2017 </option>
+						<option value="2018"> 2018 </option>
+						<option value="2019"> 2019 </option>
+						<option value="2020"> 2020 </option>
+						<option value="2021"> 2021 </option>
+						<option value="2022"> 2022 </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<hr/> <input type="button" name="Boton" id="Boton" tabindex="15" value="Enviar Datos" /> <input type="reset" name="Boton2" id="Boton2" tabindex=16" value="Limpiar" />
+				</td>
+			</tr>
+		</table>
+			
+	</form>
+	</body>
+</html>
