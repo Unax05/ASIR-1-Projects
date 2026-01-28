@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+	<head>
+		<title>PRACTICA 12B</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"  />
+	</head>
+	
+	<body>
+		<h2>Formulario de Registro</h2>
+		<form method="post" action="mailto:argeme.vila@zabalburu.org" enctype="text/plain"> <!-- method post para ocultar los datos en la barra de busqueda, action con mailto para enviar los datos directamente al correo de argeme -->
+			<table width="100%">
+			<tr align="left">
+				<td style="width:50%">
+				<p>
+					Nombre: <!-- Sin mas, pone nombre y luego el input de abajo es donde rellenas el nombre -->
+					<input type="text" name="nombre" id="nom" maxlength="25" /> <!-- los botones con text para meter texto, name es el nombre que le damos al boton, id el nombre corto que le saldrá al correo ejemplo: nom:Unax -->
+				</p>
+				<p>
+					Primer Apellido:
+					<input type="text" name="Primer_Apellido" id="ape1" maxlength="25" />
+				</p>
+				<p>
+					Segundo Apellido:
+					<input type="text" name="Segundo_Apellido" id="ape2" maxlength="25" />
+				</p>
+				<p>
+					Direccion:
+					<input type="text" name="Direccion" id="Dir" maxlength="25" />
+				</p>
+				<p>
+					CP:
+					<input type="text" name="Codigo_Postal" size="3" id="CP" maxlength="5" /> <!-- Añadimos el atributo size para definir el tamaño del cuadro de texto en el cual vamos a escribir -->
+				</p>
+				<p>
+					Estudios:
+					<select name="Estudios">
+						<option value="" selected disabled> Selecciona tus estudios en la lista</option><!-- a ver,value"" porque no tiene sentido, selected disabled=no seleccionable -->
+						<optgroup label="Informatica y Comunicaciones"><!-- optgroup, nueva etiqueta, no seleccionable label="sería lo que sale en si"--!>
+							<option value="ASIR">Adminstración de sistemas informaticos en red</option>
+							<option value="DAW">Desarrollo de Aplicaciones Web</option>
+							<option value="STI">Sistemas de Telecomunicaciones e Informaticos</option>
+						</optgroup>
+						<optgroup label="Comercio y administracion">
+							<option value="TL">Transporte y Logística</option>
+							<option value="AF">Administración y Finanzas</option>
+						</optgroup>
+						<optgroup label="Laboratorios">
+							<option value="LACC">Laboratorio de Analisis y Control de Calidad</option>
+							<option value="LCB">Laboratorio Clínico Biomedico</option>
+						</optgroup>
+					</select>
+				</p>
+				</td>
+				<td style="width:50%">
+					Sexo:<br/>
+					<input type="radio" value="Mujer" name="sexo" /> Mujer <br />
+					<input type="radio" value="Hombre" name="sexo" /> Hombre <br />
+					Turno:<br />
+					<input type="radio" value="Mañana" name="turno" /> Mañana <br />
+					<input type="radio" value="Tarde" name="turno" /> Tarde 
+				</td>
+			</tr>
+			<tr align="left">
+				<td style="width:50%">
+					Comentarios: <br/>
+					<textarea name="comentarios" id="com" rows="10" cols="40">Escribe aqui tus comentarios:
+					</textarea><!-- nueva etiqueta para añadir un cuadro de texto en este caso para enviar un comentario-->
+				</td>
+				<td style="width:50%">
+					Idiomas: <br />
+					<input type="checkbox" value="Euskera" name="idiomas" checked /> Euskera<br />
+					<input type="checkbox" value="Inglés" name="idiomas" /> Ingles <br />
+					<input type="checkbox" value="Aleman" name="idiomas" /> Aleman 
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="Enviar datos" />
+					<input type="reset" value="Limpiar" />
+				</td>
+			</tr>
+				
+
+		
+
+
+
+
+	</body>
+</html>
+
+
+

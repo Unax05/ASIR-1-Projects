@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+	<head>
+		<title> </title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"  />
+	</head>
+	
+	<body>
+		<h1>Ejemplo&lt;fieldset&gt; y &lt;label&gt;></h1>
+		<form method="post" action="mailto:argeme.vila@zabalburu.org" enctype="text/plain">
+			<fieldset>
+				<legend>Información Personal</legend>
+				<label for="nomb">Nombre: </label> <!-- En fieldsets y labels, el label for="" debe tener el mismo nombre que el id del boton, ejemplo name="ingles" id="ing" label for="ing" -->
+				<input type="text" name="nombre" id="nomb" /> <!-- El id no se envia, solo es un identificador, el name es el que se envia, el value sería la respuesta al name. Mas bajo ejemplo -->
+				
+				<label for="ape1">Apellido:</label>
+				<input type="text" name="apellido" id="ape1" />
+				
+				<input type="checkbox" name="Mayor de edad" id="MayorEdad" />
+				<label for="MayorEdad">Mayor de edad</label>
+				
+			</fieldset>
+			<fieldset>
+				<legend>Información académica</legend>
+				<label for="uni">Universidad:</label>
+				<input type="text" name="universidad" id="uni" />
+				
+				<input type="checkbox" name="titulo" id="tit" />
+				<label for="tit">Titulo obtenido</label> <br />
+				
+				Idiomas:<br />
+				<input type="checkbox" name="Euskera" value="Si" id="Eus" /> <!-- Tienes name="Euskera"? value="si", es decir si marca le mandará que si que tiene euskera -->
+				<label for="Eus"> Euskera</label><br />
+				<input type="checkbox" name="Inglés" value="Si" id="ing" />
+				<label for="ing">Ingles</label><br />
+				<input type="checkbox" name="Otros" value="Si" id="otr" />
+				<label for="otr">Otros</label>
+			</fieldset>
+			<fieldset>
+				<input type="submit" value="Enviar correo" />
+				<input type="reset" value="Nuevo registro" />
+			</fieldset>
+
+	
+
+
+
+
+	</body>
+</html>
+
+
