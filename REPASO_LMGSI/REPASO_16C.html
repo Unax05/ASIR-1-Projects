@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+	<head>
+		<title>Formularios | Práctica de Registro</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"  />
+	</head>
+	
+	<body>
+		<form 	method="post" 
+				action="mailto:argeme.vila@zabalburu.org" 
+				enctype="text/plain">
+		<h1>Formulario de Registro de Datos</h1>
+		<table border="0" cellpadding="5"  width="100%" >
+			<tr>	
+				<td colspan="2" align="center">
+					<hr />
+					<strong>Información de registro</strong>
+					<hr />
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 50%;" align="right">
+					<label for="email">E-mail: </label>
+				</td>
+				<td style="width: 50%;">
+					<input 	type="text" 
+							name="email"
+							id="email"
+							tabindex="1" 
+							maxlength="35"
+							size="35"/> 
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="ps">Contraseña: </label>
+				</td>
+				<td>
+					<input 	type="password" 
+							name="passw1" 
+							id="ps"
+							tabindex="2" 
+							maxlength="15"
+							size="15"/> 
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="ps2">Confirma Contraseña: </label>
+				</td>
+				<td>
+					<input 	type="password" 
+							name="passw2"
+							id="ps2"
+							tabindex="3" 
+							maxlength="15"
+							size="15"/> 
+				</td>
+			</tr>
+			<tr>	
+				<td colspan="2" align="center">
+					<hr />
+					<strong>Información Personal</strong>
+					<hr />
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="nombre">Nombre: </label>
+				</td>
+				<td>
+					<input 	type="text" 
+							name="nombre"
+							id="nombre"				
+							tabindex="4" 
+							maxlength="35"
+							size="35"/> 
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="apel">Apellidos: </label>
+				</td>
+				<td>
+					<input 	type="text" 
+							name="apellidos" 
+							id="apel"
+							tabindex="5" 
+							maxlength="50"
+							size="50"/> 
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="dir">Dirección: </label>
+				</td>
+				<td>
+					<input 	type="text" 
+							name="direccion" 
+							id="dir"
+							tabindex="6" 
+							maxlength="35"
+							size="35"/> 
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="pais">País: </label>
+				</td>
+				<td>
+					<input 	type="text" 
+							name="pais" 
+							id="pais"
+							tabindex="7" 
+							maxlength="2"
+							size="2"/> 
+							<label>C.P.: <input type="text" 
+							name="cp" 
+							tabindex="8" 
+							maxlength="5"
+							size="5"/> </label>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="tel">Teléfono: </label>
+				</td>
+				<td>
+					<input 	type="text" 
+							name="tlfno" 
+							id="tel"
+							tabindex="9" 
+							maxlength="9"
+							size="9"/> 
+				</td>
+			</tr>
+			<tr>	
+				<td colspan="2" align="center">
+					<hr />
+					<strong>Tarjeta de crédito</strong>
+					<hr />
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					Tipo de tarjeta: 
+				</td>
+				<td>
+					<label><input 	type="radio" 
+							name="tarjeta" 
+							value="mastercard"
+							tabindex="10" /> MasterCard
+					</label>
+					<br/>
+					<label><input 	type="radio" 
+							name="tarjeta" 
+							value="visa"
+							tabindex="11" /> Visa
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<label for="tarj">Nº Tarjeta: </label>
+				</td>
+				<td>
+					<input 	type="text" 
+							name="numtarjeta" 
+							id="tarj"
+							tabindex="12" 
+							maxlength="20"
+							size="20"/> 
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+				Fecha de Caducidad: 
+				</td>
+				<td><label>Mes: 
+					<select name="mescaduca"
+							tabindex="13"> 
+						<option>MM</option>
+						<option>01</option>
+						<option>02</option>
+						<option>03</option>
+						<option>04</option>
+						<option>05</option>
+						<option>06</option>
+						<option>07</option>
+						<option>08</option>
+						<option>09</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+					</select>
+					</label>
+					<label>Año: 
+					<select name="aniocaduca"
+							tabindex="14"> 
+						<option>AAAA</option>
+						<option>2012</option>
+						<option>2013</option>
+						<option>2014</option>
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+						<option>2018</option>
+						<option>2019</option>
+						<option>2020</option>
+						<option>2021</option>
+						<option>2022</option>
+					</select>	
+					</label>	
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<hr />
+					<input type="submit" value="Enviar Datos" tabindex="15" /> 
+					<input type="reset" value="Limpiar" tabindex="16"/>
+				</td>
+			</tr>
+		</table>
+		</form>
+	</body>
+</html>
+
+
+
+
+
+
+
+

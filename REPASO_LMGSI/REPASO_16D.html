@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+	<head>
+		<title>Formulario de Registro en Campeonato</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"  />
+	</head>
+	<body>
+		<form action="Practica16D-b.html" method="get">
+			<h1>Formulario de Registro en Campeonato</h1>
+			<table cellpadding="5"  width="100%" >
+				<tr valign="top">	
+					<td style="width:33%;" >
+						<fieldset>
+						<legend>Selección de carrera:</legend>
+						<select name="carrera" tabindex="1">
+							<option value=""> -- Selecciona Carrera -- </option>
+							<option value="10km">10 Km</option>
+							<option value="5km">5 Km</option>
+							<option value="maraton">Maratón</option>
+							<option value="3km">3 Km</option>
+						</select>
+						</fieldset>
+						
+					</td>
+					<td style="width:33%;">
+					<fieldset>
+						<legend>Clase de carrera:</legend>
+						<select name="clase" size="3"  tabindex="2">
+							<option value="abierto">Abierto (21+)</option>
+							<option value="maestros">Maestro (30+)</option>
+							<option value="veteranos">Veteranos (40+)</option>
+							<option value="jovenes">Jóvenes (16-20)</option>
+							<option value="novatos">Novatos (12-15)</option>
+						</select>
+					</fieldset>
+						
+					</td>
+					<td style="width:33%;">
+						<fieldset>
+							<legend>Competición:</legend>
+								<input 	type="radio" 
+										name="competicion"
+										id="fondo"
+										value="fondo" 
+										tabindex="3" 
+										checked="checked" /> 
+								<label for="fondo">Fondo </label><br/>
+								
+								<input 	type="radio" 
+										name="competicion" 
+										id="m"
+										value="marcha" 
+										tabindex="4" />
+								<label for="m"> Marcha </label><br/>
+								
+								<input 	type="radio" 
+										name="competicion" 
+										id="s"
+										value="silla" 
+										tabindex="5"/>
+								<label for="s"> Silla de Ruedas </label>
+						</fieldset>
+						
+					</td>
+				</tr>
+				<tr valign="top">
+					<td>
+						<fieldset>
+							<legend>Medio de Transporte:</legend>
+								
+								<input 	type="checkbox" 
+										name="avion"
+										id="plane"										
+										value="si" 
+										tabindex="6"/>
+								<label for="plane"> Avión </label><br/>
+								
+								<input 	type="checkbox" 
+										name="barco" 
+										id="boat"
+										value="si" 
+										tabindex="7"/>
+								<label for="boat">Barco </label><br/>
+								
+								<input 	type="checkbox" 
+										name="tren" 
+										id="train"
+										value="si" 
+										tabindex="8"/>
+								<label for="train"> Tren </label><br/>
+								
+								<input 	type="checkbox" 
+										name="autobus" 
+										id="bus"
+										value="si" 
+										tabindex="9"/>
+								<label for="bus"> Autobús </label><br/>
+								
+								<input 	type="checkbox" 
+										name="coche" 
+										id="car"
+										value="si" 
+										tabindex="10"/>
+								<label for="car"> Vehículo Propio </label>
+						</fieldset>
+					</td>
+					<td>
+						<fieldset>
+							<legend>Modo de Pago:</legend>
+								
+								<input 	type="radio" 
+										name="pago" 
+										id="cash"
+										value="efectivo" 
+										tabindex="11" 
+										checked="checked" /> 
+								<label for="cash">Efectivo </label><br/>
+								
+								<input 	type="radio" 
+										name="pago" 
+										id="giro_postal"
+										value="giro" 
+										tabindex="12" />
+								<label for="giro_postal"> Giro Postal </label><br/>
+								
+								<input 	type="radio" 
+										name="pago" 
+										id="cheque"
+										value="cheque" 
+										tabindex="13" />
+								<label for="cheque"> Cheque </label><br/>
+								
+								<input 	type="radio" 
+										name="pago" 
+										id="card"
+										value="tarjeta" 
+										tabindex="14" />
+								<label for="card"> Tarjeta de Crédito </label>
+						</fieldset>
+					</td>
+					<td>
+						<fieldset>
+							<legend>Tipo de Tarjeta:</legend>
+								
+								<input 	type="radio" 
+										name="tipotarjeta" 
+										id="visa"
+										value="visa" 
+										tabindex="15" />
+								<label for="visa"> VISA </label><br/>
+								
+								<input 	type="radio" 
+										name="tipotarjeta" 
+										id="american"
+										value="american" 
+										tabindex="16" />
+								<label for="american"> American Express </label><br/>
+								
+								<input 	type="radio" 
+										name="tipotarjeta" 
+										id="card4b"
+										value="4B" 
+										tabindex="17" />
+								<label for="card4b"> 4B </label><br/>
+								
+								<input 	type="radio" 
+										name="tipotarjeta" 
+										id="servired"
+										value="servired" 
+										tabindex="18" />
+								<label for="servired"> Servired </label><br/>
+								
+								<input 	type="radio" 
+										name="tipotarjeta" 
+										id="red6000"
+										value="red6000" 
+										tabindex="19" />
+								<label for="red6000">  Red 6000 </label> 
+						</fieldset>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">
+						<hr />
+						<input type="submit" value="Enviar Datos" tabindex="20" /> 
+						<input type="reset" value="Limpiar" tabindex="21"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
+
+
+
+
+
+
+
